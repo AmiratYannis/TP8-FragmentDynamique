@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="730dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/createFrag1"
+                android:layout_width="196dp"
+                android:layout_height="43dp"
+                android:text="CREATE FRAG 1"
+                app:layout_constraintBottom_toTopOf="@+id/textViewMainAct"
+                app:layout_constraintEnd_toStartOf="@+id/createFrag2"
+                app:layout_constraintHorizontal_bias="0.592"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.294" />
+
+            <Button
+                android:id="@+id/createFrag2"
+                android:layout_width="184dp"
+                android:layout_height="43dp"
+                android:text="CREATE FRAG 2"
+                app:layout_constraintBottom_toTopOf="@+id/editTextMainAct"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.166" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewMainAct"
+                android:layout_width="158dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="72dp"
+                android:text="data texte activity"
+                app:layout_constraintBottom_toTopOf="@+id/toFrag1"
+                app:layout_constraintEnd_toStartOf="@+id/editTextMainAct"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextMainAct"
+                android:layout_width="177dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="68dp"
+                android:ems="10"
+                android:hint="data texte activity input"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/toFrag2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toFrag1"
+                android:layout_width="178dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="TO FRAG 1"
+                app:layout_constraintBottom_toTopOf="@+id/frame1"
+                app:layout_constraintEnd_toStartOf="@+id/toFrag2"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/toFrag2"
+                android:layout_width="180dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="36dp"
+                android:text="TO FRAG 2"
+                app:layout_constraintBottom_toTopOf="@+id/frame2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

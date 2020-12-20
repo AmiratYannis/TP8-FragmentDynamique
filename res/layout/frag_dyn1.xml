@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+    <Button
+        android:id="@+id/frag1FromActivity"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:text="DATA FROM ACTIVITY"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <Button
+        android:id="@+id/frag1ToActivity"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="205dp"
+        android:layout_height="41dp"
+        android:text="DATA TO ACTIVITY"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <Button
+        android:id="@+id/frag1FromFrag2"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
+        android:text="DATA FROM FRAG2"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <Button
+        android:id="@+id/frag1ToFrag2"
+        android:layout_width="203dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="20dp"
+        android:text="DATA TO FRAG2"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFrag1"
+        android:layout_width="173dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="20dp"
+        android:text="data texte fragment1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+       <EditText
+           android:id="@+id/editTextTextPersonNameF1"
+           android:layout_width="190dp"
+           android:layout_height="43dp"
+           android:layout_marginBottom="400dp"
+           android:ems="10"
+           android:hint="data text input"
+           android:inputType="textPersonName"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.464"
+           app:layout_constraintStart_toStartOf="parent" />
+   </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
